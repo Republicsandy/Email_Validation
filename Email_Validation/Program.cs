@@ -12,6 +12,7 @@ namespace Email_Validation
             Console.WriteLine("press 2 for second check email validation !");
             Console.WriteLine("press 3 for third check email validation !");
             Console.WriteLine("press 4 for fourth check email validation !");
+            Console.WriteLine("press 5 for again check email validation !");
 
             var getValueByUser = Convert.ToInt32(Console.ReadLine());
             switch (getValueByUser)
@@ -43,6 +44,13 @@ namespace Email_Validation
                     string email3 = Console.ReadLine();
                     bool valid3 = validation3.validateEmail3(email3);
                     Console.WriteLine(valid3);
+                    break;
+                case 5:
+                    Email_Validation4 validation4 = new Email_Validation4();
+                    Console.WriteLine("Enter you email");
+                    string email4 = Console.ReadLine();
+                    bool valid4 = validation4.validateEmail4(email4);
+                    Console.WriteLine(valid4);
                     break;
 
                 default:
